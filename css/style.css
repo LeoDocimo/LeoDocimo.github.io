@@ -1,0 +1,305 @@
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    background-color:#0c0d0c;
+    display:flex;
+    height: 60px;
+    align-items: center;
+    padding: 1%;
+    justify-content:space-between;
+
+}
+
+
+.logo img{
+    height: 55px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    padding-right: 10px;
+    font-size: 150%;
+    color: aliceblue;
+
+}
+
+nav a:hover{
+    color: aquamarine;
+}
+
+body{
+    background-color:#18181a;
+}
+
+h1{
+    font-size: 3em;
+    font-family: Georgia;
+    font-weight:bolder;
+    text-align: center;
+    padding-top: 2%;
+}
+
+#sobremi{
+    height: 70em;
+    background-color: #1e2326;
+    display: block;
+    
+}
+
+.sobremi{
+    height: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 10%;
+}
+
+#sobremi h2{
+    font-size: 240%;
+    padding-bottom: 2%;
+    color: aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#sobremi p{
+    font-size: 110%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    letter-spacing: 0.2%;
+    word-spacing: 0.2em;
+}
+
+#sobremi img{
+    width: 20%;
+}
+
+
+#habilidades{
+    background-color: #120f0f;
+    display: block;
+    height: 30em;
+    width: 100%;
+    margin: auto;
+}
+
+.habilidades h2{
+    font-size: 230%;
+    padding-bottom: 2%;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.arthabilidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contenedor-tecnologias{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.habilidades h3{
+    font-size: 160%;
+    color: aliceblue;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+#java{
+    max-width: 100%;
+    height: auto;
+    width: 10%;
+
+}
+
+#python{
+    max-width: 100%;
+    height: auto;
+    width: 9%;
+}
+
+#mysql{
+    max-width: 100%;
+    height: auto;
+    width: 9%;
+}
+
+#html{
+    max-width: 100%;
+    height: auto;
+    width: 8.4%;
+}
+
+#css{
+    max-width: 100%;
+    height: auto;
+    width: 6%;
+}
+
+.ContenedorJava .descripcion{
+    padding-right: 65%;
+    
+}
+
+.ContenedorJava{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+#educacion{
+    display: block;
+}
+
+.educacion{
+    background-color: #18181a;
+
+}
+
+.contenedor-estudios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    letter-spacing: 0.2%;
+    word-spacing: 0.1em;
+}
+
+.contenedor-estudios .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    font-size: 120%;
+    flex-direction: column;
+}
+
+.educacion h2{
+    font-size: 230%;
+    text-align: center;
+    color:aliceblue;
+    padding-bottom: 1em;
+    
+}
+
+.educacion h3{
+    font-size: 160%;
+    color: aliceblue;
+    margin-bottom: 1em;
+    
+
+}
+
+.educacion p{
+    color: aliceblue;
+}
+
+
+
+
+footer{
+    background-color: #212126;
+    width: 100%;
+
+}
+
+form{
+    background-color: rgba(0, 0, 0, 40%);
+    margin-left: 2%;
+    width: 15em;
+    display: flex;
+    color:aliceblue ;
+}
+
+.formulario{
+    background-color: #252a2e;
+    
+    
+}
+legend{
+    font-size: 2em;
+    padding-bottom: 3%;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 12%;
+    border: 2% solid black;
+}
+
+form label{
+    color: aliceblue;
+    margin-bottom: 3%;
+}
+
+.boton{
+    margin-top: 3%;
+
+}
+
+.boton:hover{
+    background-color: aqua;
+}
+
+hr{
+    border-color:#18181a;
+    background-color: #120f0f;
+    height: 2px;
+}
+
+.contenedor-redes{
+    text-align: center;
+
+}
+
+.redes{
+padding-right: 1%;
+padding-bottom: 1%;
+padding-top: 1%;
+}
+
+
+#linkedin{
+    width: 3%;  
+    
+}
+
+#instagram{
+    width: 3%;
+}
+
+.mapa{
+    width:15em;
+    height: 10em;
+}

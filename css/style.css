@@ -86,24 +86,25 @@ h1{
 
 
 #sobremi{
-    height: 65em;
+    height: 57em;
     background-color: #1e2326;
     display: block;
     
 }
 
 #sobremi .contenedor{
-    height: 65em;
+    height: 55em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     flex-wrap: wrap;
-    padding: 10%;
+    padding: 0% 5%;
 }
 
 #sobremi h2{
-    padding-bottom: 2%;
+    text-align: center;
+    padding-top: 5%;
     color: aliceblue;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -112,10 +113,6 @@ h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: aliceblue;
     word-spacing: 0.2em;
-}
-
-#sobremi img{
-    width: 20%;
 }
 
 
@@ -392,6 +389,11 @@ footer{
     }
     p{
         font-size: 1.25em;;
+    }
+
+
+    #sobremi h2{
+        padding: 10%;
     }
 
     #habilidades{

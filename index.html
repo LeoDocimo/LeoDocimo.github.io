@@ -7,39 +7,43 @@
     <title>Mi portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <a href="#" class="logo">
-            <img src="./images/Donghua_University_logo.png" alt="logo de la pagina">
-        </a>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#educacion">Estudios</a>
-            <a href="#footer">Contactame</a>
-        </nav>
+        <div class="contenedorheader">
+            <a href="#" class="logo"> <!-- Logo en el header-->
+                <img src="./images/logo.png" alt="logo de la pagina">
+            </a>
+            <nav> <!--Barra de navegacion con las secciones-->
+                <a href="#inicio">Inicio</a>
+                <a href="#sobremi">Sobre mi</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#educacion">Estudios</a>
+                <a href="#contactame">Contactame</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="inicio" class="inicio">
-            <article>
-            </article>
+        <section id="inicio"> <!--Inicio de la pagina-->
+            <div class="contenedor">
+                <h1>
+                    Hola me llamo Leonardo Docimo <br><i class="ri-code-line"></i> soy desarrolador web Front-end y java
+                    FullStack developer. <i class="ri-code-s-slash-line"></i>
+                </h1>
+            </div>
         </section>
-        <section id="sobremi">
-            <article class="sobremi">
-                <h2>
-                    Hola soy Leonardo Docimo.
-                </h2>
+        <section id="sobremi"> <!--Seccion de informacion sobre mi-->
+            <div class="contenedor">
                 <p class="descripcionmia">Soy una persona proactiva, trabajador, con una actitud entusiasta y curiosa a
-                    la que <br>le gusta gusta aprender sobre diversos temas y mantenerce actualizado constantemente.
-                    <br>
-                    Cuento con conocimientos tanto del back-end como del Front-end en desarrolo web y de apps.</p>
-            </article>
+                    la que <br>le gusta aprender sobre diversos temas y mantenerce actualizado constantemente.<br>
+                    Cuento con conocimientos tanto del back-end como del Front-end en desarrolo web y de apps.
+                    <br>disfruto tambien de aprender idiomas y aprendo bastante de manera autodidacta</p>
+            </div>
         </section>
-        <section id="habilidades" class="habilidades">
-            <article class="arthabilidades">
+        <section id="habilidades"> <!--Seccion de info sobre las tecnologias y conocimientos que tengo-->
+            <div class="contenedor">
                 <h2>En esta seccion te vengo a contar mis poderes</h2>
                 <h3>Poderes tecnologicos</h3>
                 <div class="contenedor-tecnologias">
@@ -49,14 +53,14 @@
                     <img class="itemhab" id="html" src="./images/html.png" alt="html">
                     <img class="itemhab" id="css" src="./images/css.png" alt="css">
                 </div>
-            </article>
+            </div>
         </section>
-        <section id="educacion">
-            <article class="educacion">
+        <section id="educacion"> <!--Seccion de info sobre mi educacion-->
+            <div class="contenedor">
                 <h2>
                     Educacion
                 </h2>
-                <div class="contenedor-estudios">
+                <div class="contenedor-estudios"><!--Contenedor de mis estudios-->
                     <div class="item">
                         <h3>FullStack java Developer</h3>
                         <p>Argentina Programa 4.0</p>
@@ -78,35 +82,36 @@
                         </p>
                     </div>
                 </div>
-            </article>
+            </div>
+        </section>
+        <section id="contactame"> <!--Seccion para contactarme -->
+            <h2>Contactame</h2>
+            <div class="contenedor">
+                <form action="mailto:leodocimo@gmail.com" method="post">
+                    <fieldset>
+                        <legend>Envie su mensaje</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Dejeme su mensaje" required></textarea>
+                        <br>
+                        <button type="submit" class="boton">Enviar mensaje</button>
+                    </fieldset>
+                </form>
+            </div>
         </section>
     </main>
-    <footer id=footer>
-        <!--<iframe class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105072.80996366193!2d-58.63077333239279!3d-34.61616307352879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb859089ff8d5%3A0x5637c534d2130a66!2sEl%20Palomar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1696342478573!5m2!1ses-419!2sar"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
-        <form action="otrapagina.html" method="post">
-            <fieldset>
-                <legend>Contactame</legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
-                <br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
-                <br>
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" placeholder="Dejeme su mensaje"></textarea required>
-                <br>
-                <button type="submit" class="boton">Enviar mensaje</button>
-            </fieldset>
-        </form>
-        <hr>
+    <footer id=footer> <!--Footer-->
         <div class="contenedor-redes">
             <a href="https://www.linkedin.com/in/leonardo-docimo-307133267/" target="_blank">
-                <img class="redes" id="linkedin" src="./images/linkedin.png" alt="sigueme en instagram">
+                <i class="ri-linkedin-box-fill"></i>
             </a>
             <a href="https://www.instagram.com/leo_dev09/" target="_blank">
-                <img class="redes" id="instagram" src="./images/instagram.png" alt="sigueme en instagram">
+                <i class="ri-instagram-fill"></i>
             </a>
         </div>
     </footer>

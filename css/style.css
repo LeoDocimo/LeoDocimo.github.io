@@ -7,6 +7,16 @@ html{
     scroll-behavior:smooth;
 }
 
+h2{
+    font-size: 2.7em;
+}
+h3{
+    font-size: 2em;
+}
+p{
+    font-size: 1.25em;;
+}
+
 header{
     background-color:#0c0d0c;
 }
@@ -51,15 +61,7 @@ h1{
     text-align: center;
     padding: 0% 4%;
 }
-h2{
-    font-size: 2.7em;
-}
-h3{
-    font-size: 2em;
-}
-p{
-    font-size: 1.25em;;
-}
+
 
 
 #inicio{
@@ -303,8 +305,11 @@ form input, textarea{
     padding: 12px 7px;
     margin-bottom: 5px;
     margin-right: 25px;
+    color: blueviolet;
     
 }
+
+
 
 :focus{
     outline: 2px solid #4f093f;
@@ -360,7 +365,7 @@ footer{
     }
     .contenedorheader{
         display:flex;
-        height: 16em;
+        height: 19em;
         align-items:center;
         flex-direction: column;
         justify-content:center;
@@ -427,5 +432,8 @@ footer{
         margin-right: 30px;
     }
     
+    form{
+        margin: 30px;
+    }
 }
 

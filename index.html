@@ -1,92 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi portfolio</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="contenedorheader">
-            <a href="#" class="logo"> <!-- Logo en el header-->
-                <img src="./images/logo.png" alt="logo de la pagina">
-            </a>
-            <nav> <!--Barra de navegacion con las secciones-->
-                <a href="#inicio">Inicio</a>
-                <a href="#sobremi">Sobre mi</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#educacion">Estudios</a>
-                <a href="#contactame">Contactame</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" widht="10" height="50" alt="logo de la pagina">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="#inicio" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#sobremi" class="nav-link">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#habilidades" class="nav-link">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#educacion" class="nav-link">Educacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contactame" class="nav-link">Contactame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
     </header>
     <main>
         <section id="inicio"> <!--Inicio de la pagina-->
-            <div class="contenedor">
-                <h1> <!--Presentacion sencilla de hago-->
-                    Hola me llamo Leonardo Docimo <br><i class="ri-code-line"></i> soy desarrolador web Front-end y java
-                    FullStack developer. <i class="ri-code-s-slash-line"></i>
-                </h1>
-            </div>
+            <h1> <!--Presentacion sencilla de hago-->
+                Hola, me llamo <span>Leonardo Docimo</span> <br><i class="ri-code-line"></i> soy desarrolador web Front-end y java
+                FullStack developer. <i class="ri-code-s-slash-line"></i>
+            </h1>
         </section>
         <section id="sobremi"> <!--Seccion de informacion sobre mi-->
             <h2>Te cuento un poco sobre mi y mis intereses</h2>
-            <div class="contenedor">
+            <article class="contenedor">
                 <p class="descripcionmia">Soy una persona proactiva, trabajador, con una actitud entusiasta y curiosa a
-                    la que <br>le gusta aprender sobre diversos temas y mantenerce actualizado constantemente.<br>
+                    la que le gusta aprender sobre diversos temas y mantenerce actualizado constantemente.
+
                     Cuento con conocimientos tanto del back-end como del Front-end en desarrolo web y de apps.
-                    <br>disfruto tambien de aprender idiomas y aprendo bastante de manera autodidacta
+                    disfruto tambien de aprender idiomas y aprendo bastante de manera autodidacta
                 </p>
-            </div>
+            </article>
         </section>
         <section id="habilidades"> <!--Seccion de info sobre las tecnologias y conocimientos que tengo-->
-            <div class="contenedor">
-                <h2>En esta seccion te vengo a contar mis sobre poderes</h2>
+            <h2>En esta seccion te vengo a contar mis sobre poderes</h2>
+            <article class="contenedor-habilidades">
                 <h3>Poderes tecnologicos</h3>
-                <div class="contenedor-tecnologias"><!--Contenedor con imagenes de las tecnologias que uso-->
-                    <img class="itemhab" id="java" src="./images/java.png" alt="logo de java">
-                    <img class="itemhab" id="python" src="./images/python.png" alt="logo de python">
-                    <img class="itemhab" id="mysql" src="./images/mysql.png" alt="logo de mysql">
-                    <img class="itemhab" id="html" src="./images/html.png" alt="logo html">
-                    <img class="itemhab" id="css" src="./images/css.png" alt="logo css">
+                <h4>Java</h3>
+                <div class="contain">
+                    <div class="porcen java">87%</div>
                 </div>
+
+                <h4>Python</h3>
+                <div class="contain">
+                    <div class="porcen python">80%</div>
+                </div>
+
+                <h4>JavaScript</h3>
+                <div class="contain">
+                    <div class="porcen js">50%</div>
+                </div>
+
+                <h4>HTML</h3>
+                <div class="contain">
+                    <div class="porcen html">70%</div>
+                </div>
+
+                <h4>MySql</h3>
+                <div class="contain">
+                    <div class="porcen mysql">87%</div>
+                </div>
+            </article>
+            </section>
+
+        <section id="educacion"><!-- Seccion de info sobre mi educacion -->
+            <h2>
+                Educacion
+            </h2>
+            <div class="contenedor-estudios"><!--Contenedor de mis estudios-->
+                <article class="item">
+                    <h3>FullStack java Developer</h3>
+                    <p>Argentina Programa 4.0</p>
+                    <p class="descripcion"> <!--info sobre curso de java-->
+                        En este trayecto adquiri conocimientos desde los fundamentos de java<br>hasta llegar a la
+                        creacion de aplicaciones utilizando tecnologias y conocimientos como<br>Java,
+                        MySQL,GIT/GITHUB, JDBC y Swing
+                    </p>
+                </article>
+                <article class="item">
+                    <h3>Codo a Codo 4.0</h3> info sobre curso de python
+                    <p>En este trayecto adquiri los fundamentos de Python y de bases de datos relacionales</p>
+                </article>
+                <article class="item">
+                    <h3>Ciencia de Datos con Python (CETI)</h3> info sobre curso de ciencia de datos
+                    <p>
+                        En este trayecto adquiri los conocimientos sobre ciencia de datos utilizando python <br> a
+                        travez delibrerias como Pandas, Matplotdib y NumPy
+                    </p>
+                </article>
             </div>
         </section>
-        <section id="educacion"> <!--Seccion de info sobre mi educacion-->
-            <div class="contenedor">
-                <h2>
-                    Educacion
-                </h2>
-                <div class="contenedor-estudios"><!--Contenedor de mis estudios-->
-                    <div class="item">
-                        <h3>FullStack java Developer</h3>
-                        <p>Argentina Programa 4.0</p>
-                        <p class="descripcion"> <!--info sobre curso de java-->
-                            En este trayecto adquiri conocimientos desde los fundamentos de java<br>hasta llegar a la
-                            creacion de aplicaciones utilizando tecnologias y conocimientos como<br>Java,
-                            MySQL,GIT/GITHUB, JDBC y Swing
-                        </p>
-                    </div>
-                    <div class="item">
-                        <h3>Codo a Codo 4.0</h3> <!--info sobre curso de python-->
-                        <p>En este trayecto adquiri los fundamentos de Python y de bases de datos relacionales</p>
-                    </div>
-                    <div class="item">
-                        <h3>Ciencia de Datos con Python (CETI)</h3> <!--info sobre curso de ciencia de datos-->
-                        <p>
-                            En este trayecto adquiri los conocimientos sobre ciencia de datos utilizando python <br> a
-                            travez delibrerias como Pandas, Matplotdib y NumPy
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contactame"> <!--Seccion para contactarme -->
+    </main>
+        <section id="contactame"> <!--Seccion para contactarme-->
             <h2>Contactame</h2>
             <div class="contenedor">
                 <form action="mailto:leodocimo@gmail.com" method="post" enctype="multipart/form-data">
@@ -106,7 +145,6 @@
                 </form>
             </div>
         </section>
-    </main>
     <footer id=footer> <!--Footer-->
         <div class="contenedor-redes">
             <a href="https://www.linkedin.com/in/leonardo-docimo-307133267/" target="_blank">
@@ -116,8 +154,11 @@
                 <i class="ri-instagram-fill" alt="Logo de Instagram"></i>
             </a>
         </div>
-        <p>&copy; 2023 Leonardo Docimo. Todos los derechos reservados.</p></p>
+        <p>&copy; 2023 Leonardo Docimo. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

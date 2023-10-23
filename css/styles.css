@@ -11,24 +11,27 @@ html {
 h1 {
     color: aliceblue;
     font-size: 2.6em;
-    font-weight: 600;
+    font-weight: 700;
     
 }
 
 h2 {
     color: aliceblue;
     font-size: 2.3em;
+    font-weight: 600;
     
 }
 
 h3 {
     color: aliceblue;
     font-size: 1.9em;
+    font-weight: 500;
 }
 
 h4 {
     color: aliceblue;
     font-size: 1.4em;
+    font-weight: 400;
 }
 
 p {
@@ -36,7 +39,7 @@ p {
     font-size: 1.25em;
 }
 
-
+/*Nav*/
 .nav-link{
     font-weight: 700;
 }
@@ -46,7 +49,7 @@ p {
     font-weight: 800;
 }
 
-
+/*section inicio*/
 #inicio {
     height: 100vh;
     padding: 10%;
@@ -69,21 +72,25 @@ h1 span:hover{
     color: #4f093f;
 }
 
+/*section sobre mi*/
 #sobremi {
+    height: 102vh;
     text-align: center;
     padding: 30px;
     background-color: #1e2326;
-    height: 90vh;
+    align-items: center;
 }
 
 #sobremi h2 {
-    padding-top: 15%;
+    padding-bottom: 8%;
 }
 
 .descripcionmia {
-    margin-top: 2em;
+    padding-top: 2em;
 }
 
+
+/*section habilidades*/
 #habilidades {
     background-color: #120f0f;
     height: 100vh;
@@ -92,13 +99,16 @@ h1 span:hover{
 
 }
 
+
 #habilidades h4 {
-    padding: 5% 0 0 5%;
+    padding: 5% 0 1% 5%;
 }
 
 
 .contenedor-habilidades{
+    padding-top: 7%;
     width: 90%;
+    padding-left: 5%;
 }
 
 
@@ -120,8 +130,9 @@ h1 span:hover{
     padding: 6% 0 4% 0;
 }
 
-
+/*animaciones de las barras de carga de las habilidades */
 .java {
+    width: 0;
     background-color: #4f093f;
     animation: Java 3s forwards;
     border-radius: 4rem;
@@ -201,7 +212,7 @@ h1 span:hover{
     }
 }
 
-
+/*section educacion*/
 #educacion {
     background-color: #18181a;
 }
@@ -221,6 +232,7 @@ h1 span:hover{
 }
 
 .contenedor-estudios .item {
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,6 +261,8 @@ h1 span:hover{
     color: aliceblue;
     text-align: left;
 }
+
+/*section contactame*/
 
 #contactame {
     color: aliceblue;
@@ -331,6 +345,8 @@ textarea {
     background-color: #4f093f;
 }
 
+/*footer*/
+
 footer {
     background-color: #212126;
 }
@@ -351,30 +367,87 @@ footer p {
 }
 
 
-@media (min-width: 720px){
+@media (min-width: 768px){
     #inicio{
         padding: 2em 0 0 2em;
     }
 
     #sobremi{
-        
-        height: 40%;
-    }
-    
-    #sobremi h2 {
-        padding-top: 3%;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
     }
 
+    .descripcionmia{
+        text-align: left;
+    }
+
+    
     #habilidades{
-        height: 50%;
+        height: 30%;
     }
 }
+
+@media (min-width: 1024px){
+    
+    #sobremi{
+        height: 100vh;
+        padding-bottom: 1%;
+    }
+
+    #sobremi h2{
+        padding-bottom: 2%;
+    }
+    }
+    .descripcionmia{
+        text-align: left;
+
+    }
+
+
+
 
 
 @media (min-width: 1200px){
 
+    .nav-link{
+        color:#888;
+        font-size: 130%;
+        transition: color 0.5s ease, font-size 0.5s ease;
+    }
+
+    .nav-link:hover{
+        color: #700657;
+        font-size: 150%;
+        font-weight: 900;
+    }
+
+    #sobremi{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+
+    #sobremi h2 {
+        padding-bottom: 5%
+    }
+
+    .descripcionmia{
+        text-align: left;
+    }
+
+
     #habilidades{
         height: 70%;
+    }
+
+    #habilidades h4 {
+        padding: 5% 0 1% 7%;
     }
 
     #educacion{
@@ -383,22 +456,13 @@ footer p {
 
 
     form{
-        width: 25em;
+        width: 30%;
     }
 
     .ri-linkedin-box-fill, .ri-instagram-fill{
         font-size: 2em;
     }
 
-    .nav-link{
-        font-size: 130%;
-        font-weight: 700;
-    }
-
-    .nav-link:hover{
-        color: #700657;;
-        font-weight: 900;
-    }
 
 }
 

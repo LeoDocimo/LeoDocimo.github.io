@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container">
+
+                <a href="#" class="navbar-brand">
+                    <img src="../images/logo.png" widht="10" height="50" alt="logo de la pagina">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                    aria-controls="navbarS" aria-expanded="false" aria-label="Toggle-navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarS">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="contactame" class="oscuro"> <!--Seccion para contactarme-->
+            <h2>Contactame</h2>
+            <button id="btncolor">
+                <i id="iconobtn" class="fa-solid fa-sun"></i>
+            </button>
+            <div class="contenedor">
+                <form class="oscuro" action="mailto:leodocimo@gmail.com" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Envie su mensaje</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Dejeme su mensaje" required></textarea>
+                        <br>
+                        <button type="submit" class="boton">Enviar mensaje</button>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="contenedor-mapa">
+                <button id="btnmapa" class="btnmapa">
+                    <img src="../images/map-pin-2-line.png" alt="">
+                </button>
+                <iframe id="mapa"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.984198861226!2d-58.597621210966516!3d-34.61058259347121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb859089ff8d5%3A0x5637c534d2130a66!2sEl%20Palomar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700089407264!5m2!1ses-419!2sar"
+                    width="200" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id=footer class="oscuro"> <!--Footer-->
+        <div class="contenedor-redes">
+            <a href="https://www.linkedin.com/in/leonardo-docimo-307133267/" target="_blank">
+                <i class="ri-linkedin-box-fill" alt="Logo de LinkedIn"></i>
+            </a>
+            <a href="https://www.instagram.com/leo_dev09/" target="_blank">
+                <i class="ri-instagram-fill" alt="Logo de Instagram"></i>
+            </a>
+        </div>
+        <p id="copy">&copy; 2023 Leonardo Docimo. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../scripts/cambios.js"></script>
+    <script src="https://kit.fontawesome.com/193928d572.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

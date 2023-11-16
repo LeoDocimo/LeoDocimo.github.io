@@ -8,6 +8,35 @@ html {
     scroll-behavior:smooth;
 }
 
+.fa-moon{}
+
+.fa-sun{}
+
+#btncolor{
+    position: fixed;
+    bottom: 300px;
+    right: 10px;
+}
+
+.colorh2{
+    color:#920e5b;
+}
+
+
+.colorh3{
+    color:#7c0e92;
+}
+
+.colorh4{
+    color:#780e92;
+}
+
+.colorP{
+    color:#920e5b;
+}
+
+
+
 h1 {
     color: aliceblue;
     font-size: 2.6em;
@@ -30,7 +59,7 @@ h3 {
 
 h4 {
     color: aliceblue;
-    font-size: 1.4em;
+    font-size: 1.8em;
     font-weight: 400;
 }
 
@@ -40,9 +69,21 @@ p {
 }
 
 /*Nav*/
+
+.bg-claro{
+    background-color: palevioletred;
+}
+
+
 .nav-link{
     font-weight: 700;
 }
+
+.nav-link.claro{
+    font-weight: 700;
+    color:#802e57;
+}
+
 
 .nav-link:hover{
     color: #700657;
@@ -73,7 +114,7 @@ h1 span:hover{
 }
 
 /*section sobre mi*/
-#sobremi {
+#sobremi.oscuro {
     height: 102vh;
     text-align: center;
     padding: 30px;
@@ -81,28 +122,58 @@ h1 span:hover{
     align-items: center;
 }
 
-#sobremi h2 {
+
+#sobremi.claro {
+    background-color:#d5b0be;
+    height: 102vh;
+    text-align: center;
+    padding: 30px;
+    align-items: center;
+}
+
+
+#sobremi h2.oscuro {
     padding-bottom: 8%;
 }
 
-.descripcionmia {
+#sobremi h2.claro{
+    padding-bottom: 8%;
+}
+
+#parrafosobremi.oscuro{
     padding-top: 2em;
+    
+}
+
+#parrafosobremi.claro{
+    padding-top: 2em;
+    color:#00170b;
 }
 
 
+
 /*section habilidades*/
-#habilidades {
+#habilidades.oscuro {
     background-color: #120f0f;
-    height: 100vh;
+    text-align: center;
+    padding: 2%;
+
+}
+
+#habilidades.claro {
+    background-color: #d88cb0;
     text-align: center;
     padding: 2%;
 
 }
 
 
+
 #habilidades h4 {
     padding: 5% 0 1% 5%;
 }
+
+
 
 
 .contenedor-habilidades{
@@ -213,9 +284,15 @@ h1 span:hover{
 }
 
 /*section educacion*/
-#educacion {
+#educacion.oscuro {
     background-color: #18181a;
 }
+
+
+#educacion.claro {
+    background-color: #d5b0c1;
+}
+
 
 #educacion h2 {
     text-align: center;
@@ -231,7 +308,7 @@ h1 span:hover{
     padding: 5%;
 }
 
-.contenedor-estudios .item {
+.contenedor-estudios .item.oscuro {
     width: 80%;
     display: flex;
     align-items: center;
@@ -245,28 +322,49 @@ h1 span:hover{
     margin: 5% 5% 1% 5%;
 }
 
+.contenedor-estudios .item.claro {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+    margin-bottom: 30px;
+    background-color: #db95b6;
+    font-size: 120%;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 5% 5% 1% 5%;
+}
+
+
 #educacion h2 {
     text-align: center;
-    color: aliceblue;
     padding-bottom: 0.5em;
     padding-top: 1em;
 }
 
 #educacion h3 {
-    color: aliceblue;
     margin-bottom: 0.3em;
 }
 
 #educacion p {
-    color: aliceblue;
     text-align: left;
 }
 
 /*section contactame*/
 
-#contactame {
+#contactame.oscuro {
+    height: 110vh;
     color: aliceblue;
     background-color: #120f0f;
+    display: block;
+    margin: auto;
+}
+
+#contactame.claro {
+    height: 110vh;
+    color: aliceblue;
+    background-color: #d686ac;
     display: block;
     margin: auto;
 }
@@ -286,7 +384,7 @@ h1 span:hover{
     padding-top: 3%;
 }
 
-form {
+form.oscuro {
     background-color: rgba(0, 0, 0, 40%);
     width: 18em;
     color: aliceblue;
@@ -297,7 +395,25 @@ form {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)),
         url(../images/stars-1845140_640.jpg);
+        background-repeat: none;
+        background-size: cover;
 }
+
+form.claro {
+    background-color: rgba(0, 0, 0, 40%);
+    width: 18em;
+    color: aliceblue;
+    padding: 1em;
+    border-radius: 25px;
+    border: 5px solid rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(../images/WhatsApp\ Image\ 2023-11-10\ at\ 3.31.13\ PM.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
 
 legend {
     font-size: 2em;
@@ -345,10 +461,37 @@ textarea {
     background-color: #4f093f;
 }
 
+iframe{
+    display: none;
+}
+
+#contenedor-mapa{
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+iframe.mostrar{
+    
+    display:inline;
+}
+
+#btnmapa{
+    bottom: 70px;
+    left: 10px;
+}
+
+
+
 /*footer*/
 
-footer {
+footer.oscuro {
     background-color: #212126;
+}
+
+footer.claro {
+    background-color: #c05f8c;
 }
 
 .contenedor-redes {
@@ -358,9 +501,9 @@ footer {
 }
 
 
-footer p {
+#copy{
     font-size: 14px;
-    color: #888;
+    color: #adacac;
     text-align: center;
     padding-top: 10px;
     margin-bottom: 0;
@@ -388,6 +531,10 @@ footer p {
     #habilidades{
         height: 30%;
     }
+
+    #contactame.oscuro, #contactame.claro{
+        height: 130vh;
+    }
 }
 
 @media (min-width: 1024px){
@@ -400,11 +547,18 @@ footer p {
     #sobremi h2{
         padding-bottom: 2%;
     }
-    }
+    
     .descripcionmia{
         text-align: left;
 
+        
+
     }
+
+    #contactame.oscuro, #contactame.claro{
+        height: 110vh;
+    }
+}
 
 
 
@@ -443,7 +597,7 @@ footer p {
 
 
     #habilidades{
-        height: 70%;
+        height: 60%;
     }
 
     #habilidades h4 {
@@ -454,9 +608,17 @@ footer p {
         padding-top: 5%;
     }
 
+    #contactame.oscuro, #contactame.claro{
+        height: 110vh;
+        
+    }
 
-    form{
-        width: 30%;
+    form.oscuro{
+        width: 26em;
+    }
+
+    form.claro{
+        width: 26em;
     }
 
     .ri-linkedin-box-fill, .ri-instagram-fill{

@@ -40,7 +40,7 @@
                             <a href="#educacion" class="nav-link">Educacion</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#contactame" class="nav-link">Contactame</a>
+                            <a href="./pages/contactame.html" class="nav-link">Contactame</a>
                         </li>
                     </ul>
                 </div>
@@ -55,10 +55,10 @@
                 FullStack developer. <i class="ri-code-s-slash-line"></i>
             </h1>
         </section>
-        <section id="sobremi"> <!--Seccion de informacion sobre mi-->
-            <h2>Te cuento un poco sobre mi y mis intereses</h2>
+        <section id="sobremi" class="oscuro"> <!--Seccion de informacion sobre mi-->
+            <h2 id="titulo" class="titulo oscuro">Te cuento un poco sobre mi y mis intereses</h2>
             <article class="contenedor">
-                <p class="descripcionmia">Soy una persona proactiva, trabajador, con una actitud entusiasta y curiosa a
+                <p id="parrafosobremi" class="descripcionmia oscuro">Soy una persona proactiva, trabajador, con una actitud entusiasta y curiosa a
                     la que le gusta aprender sobre diversos temas y mantenerce actualizado constantemente.
 
                     Cuento con conocimientos tanto del back-end como del Front-end en desarrolo web y de apps.
@@ -66,57 +66,59 @@
                 </p>
             </article>
         </section>
-        <section id="habilidades"> <!--Seccion de info sobre las tecnologias y conocimientos que tengo-->
-            <h2>En esta seccion te vengo a contar mis sobre poderes</h2>
-            <h3>Poderes tecnologicos</h3>
+        <button id="btncolor">
+            <i id="iconobtn" class="fa-solid fa-sun"></i>
+        </button>
+        <section id="habilidades" class="oscuro"> <!--Seccion de info sobre las tecnologias y conocimientos que tengo-->
+            <h2>En esta seccion te vengo a contar mis sobre mis poderes</h2>
             <article class="contenedor-habilidades">
-                <h4>Java</h3>
+                <h4>Java</h4>
                 <div class="contain">
                     <div class="porcen java">87%</div>
                 </div>
 
-                <h4>Python</h3>
+                <h4>Python</h4>
                 <div class="contain">
                     <div class="porcen python">80%</div>
                 </div>
 
-                <h4>JavaScript</h3>
+                <h4>JavaScript</h4>
                 <div class="contain">
                     <div class="porcen js">50%</div>
                 </div>
 
-                <h4>HTML</h3>
+                <h4>HTML</h4>
                 <div class="contain">
                     <div class="porcen html">70%</div>
                 </div>
 
-                <h4>MySql</h3>
+                <h4>MySql</h4>
                 <div class="contain">
                     <div class="porcen mysql">87%</div>
                 </div>
             </article>
             </section>
 
-        <section id="educacion"><!-- Seccion de info sobre mi educacion -->
+        <section id="educacion" class="oscuro"><!-- Seccion de info sobre mi educacion -->
             <h2>
                 Educacion
             </h2>
             <div class="contenedor-estudios"><!--Contenedor de mis estudios-->
-                <article class="item">
-                    <h3>FullStack java Developer</h3>
-                    <p>Argentina Programa 4.0</p>
+                <article class="item oscuro">
+                    <h3>FullStack java Developer - Argentina Programa 4.0</h3>
+        
                     <p class="descripcion"> <!--info sobre curso de java-->
                         En este trayecto adquiri conocimientos desde los fundamentos de java hasta llegar a la
                         creacion de aplicaciones utilizando tecnologias y conocimientos como Java,
                         MySQL,GIT/GITHUB, JDBC y Swing
                     </p>
                 </article>
-                <article class="item">
-                    <h3>Codo a Codo 4.0</h3> info sobre curso de python
+                <article class="item oscuro">
+                    <h3>Codo a Codo 4.0</h3> <!--info sobre curso de python-->
                     <p>En este trayecto adquiri conocimientos sobre diagramas de flujo, los fundamentos de Python, y de bases de datos relacionales</p>
                 </article>
-                <article class="item">
-                    <h3>Ciencia de Datos con Python (CETI)</h3> info sobre curso de ciencia de datos
+                <article class="item oscuro">
+                    <h3>Ciencia de Datos con Python (CETI)</h3><!-- info sobre curso de ciencia de datos-->
                     <p>
                         En este trayecto adquiri los conocimientos sobre ciencia de datos utilizando python a
                         travez delibrerias como Pandas, Matplotdib y NumPy
@@ -125,27 +127,7 @@
             </div>
         </section>
     </main>
-        <section id="contactame"> <!--Seccion para contactarme-->
-            <h2>Contactame</h2>
-            <div class="contenedor">
-                <form action="mailto:leodocimo@gmail.com" method="post" enctype="multipart/form-data">
-                    <fieldset>
-                        <legend>Envie su mensaje</legend>
-                        <label for="nombre">Nombre</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
-                        <br>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
-                        <br>
-                        <label for="mensaje">Mensaje</label>
-                        <textarea name="mensaje" id="mensaje" placeholder="Dejeme su mensaje" required></textarea>
-                        <br>
-                        <button type="submit" class="boton">Enviar mensaje</button>
-                    </fieldset>
-                </form>
-            </div>
-        </section>
-    <footer id=footer> <!--Footer-->
+    <footer id=footer class="oscuro"> <!--Footer-->
         <div class="contenedor-redes">
             <a href="https://www.linkedin.com/in/leonardo-docimo-307133267/" target="_blank">
                 <i class="ri-linkedin-box-fill" alt="Logo de LinkedIn"></i>
@@ -154,11 +136,13 @@
                 <i class="ri-instagram-fill" alt="Logo de Instagram"></i>
             </a>
         </div>
-        <p>&copy; 2023 Leonardo Docimo. Todos los derechos reservados.</p>
+        <p id="copy">&copy; 2023 Leonardo Docimo. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="./scripts/cambios.js"></script>
+        <script src="https://kit.fontawesome.com/193928d572.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
